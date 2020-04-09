@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+
+  &__navbarList {
+    display: flex;
+
+    li {
+      margin-right: 5rem;
+    }
+  }
+
+  &__account {
+    padding-right: 2rem;
+  }
+}
