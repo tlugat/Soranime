@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel src/landing.pug"
+    "serve": "parcel src/films.pug"
   },
   "repository": {
     "type": "git",
