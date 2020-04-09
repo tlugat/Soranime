@@ -8,7 +8,7 @@
     "shonen": "parcel src/shonen.pug",
     "films": "parcel src/films.pug",
     "home": "parcel src/home.pug",
-    "account": "parcel src/acccount.pug";
+    "account": "parcel src/acccount.pug"
 
   },
   "repository": {
