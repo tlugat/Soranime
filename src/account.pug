@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon compte</title>
+  <link rel="stylesheet" href="styles/style.scss" />
+</head>
+<body>
+  include includes/header.pug
+  <div class="retour">
+    <img class="retourpic" src="">
+    <p class="retourtitle"> Retour</p>
+  </div>
+  <h1 class="maintitle">Mon compte</h1>
+  <section class="allinfo">
+  <section class="block" >
+    <h2 class="title">Infos Perso</h2>
+    <div class="description">
+      <p>adresse mail:</p>
+      <p>Mot de passe:* </p>
+      <p>Téléphone:0648538412</p>
+    </div>
+    <button class="modifier">Modifier</button>
+  </section>
+
+  <section class="block">
+    <h2 class="title">Facture</h2>
+    <div class="description">
+    <p>Facturation:12/08/2020</p>
+    <div class="card">
+      <img src="">
+      <p>.... .... .... 1854</p>
+    </div>
+    <p>Promotion: étudiant</p>
+    </div>
+    <button class="modifier">Modifier</button>
+  </section>
+
+  <section class="block">
+    <h2 class="title">Forfait</h2>
+    <p class="description">Ultra HD</p>
+    <button class="modifier">Modifier</button>
+  </section>
+
+  <section class="block">
+    <h2 class="title">Profils</h2>
+    <div class="allprofilsdescription">
+      <div class="profilsdescription">
+        <img src="">
+        <div class="infocompte">
+          <p class="nom">Mangebcp</p>
+          <p class="supprimer">Supprimer</p>
+        </div>
+      </div>
+
+      <div class="profilsdescription">
+        <img src="">
+        <div class="infocompte">
+          <p class="nom">Hellocmoi</p>
+          <p class="supprimer">Supprimer</p>
+        </div>
+      </div>
+
+      <div class="profilsdescription">
+        <img src="">
+        <div class="infocompte">
+          <p class="nom">Salutsalu</p>
+          <p class="supprimer">Supprimer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  <button class="continue"> Continuer l'épisode  </button>
+  include includes/footer.pug
+</body>
+</html>

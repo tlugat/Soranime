@@ -1,0 +1,69 @@
+body {
+  font-family: Helvetica;
+}
+.maintitle {
+  font-size: var(--main-h1);
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.allinfo {
+  font-size: var(--main-fontSize);
+  text-align: left;
+}
+
+.infosperso {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: medium;
+}
+
+.modifier {
+  padding: 5px;
+  background-color: #1b9aaa;
+  width: 130px;
+  height: 30px;
+  color: white;
+}
+
+.description {
+  text-align: left;
+  margin-right: 30px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.forfait {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.profils {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.allprofilsdescription {
+  display: flex;
+}
+
+.profilsdescription {
+  margin-right: 20px;
+}
+
+.continue {
+  border: solid 1px #397294;
+  padding: 12px, 41px;
+  background: white;
+  align-items: flex-end;
+}
