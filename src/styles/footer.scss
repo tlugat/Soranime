@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1b9aaa;
+  padding: 3rem 0;
+  color: white;
+
+  &__joinUsText {
+    margin-bottom: 1rem;
+  }
+
+  &__brands {
+    display: flex;
+
+    div {
+      margin-left: 5rem;
+    }
+  }
+  &__brandsList {
+    li {
+      margin-top: 1rem;
+    }
+  }
+}
