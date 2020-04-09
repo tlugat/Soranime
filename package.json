@@ -1,0 +1,23 @@
+{
+  "name": "soranime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/landing.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teolugat/Soranime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teolugat/Soranime/issues"
+  },
+  "homepage": "https://github.com/teolugat/Soranime#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  }
+}
