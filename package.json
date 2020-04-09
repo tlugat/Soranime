@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel src/landing.html",
-    "dev": "parcel src/presentation.pug"
+    "landing": "parcel src/landing.pug",
+    "shonen": "parcel src/shonen.pug",
+    "films": "parcel src/films.pug",
+    "home": "parcel src/home.pug",
+    "account": "parcel src/acccount.pug";
+
   },
   "repository": {
     "type": "git",
@@ -19,6 +23,7 @@
   "homepage": "https://github.com/teolugat/Soranime#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
     "sass": "^1.26.3"
   }
 }
