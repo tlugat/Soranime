@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel src/landing.pug",
-    "shonen": "parcel src/shonen.pug"
+    "landing": "parcel src/landing.pug",
+    "shonen": "parcel src/shonen.pug",
+    "films": "parcel src/films.pug",
+    "home": "parcel src/home.pug",
+    "account": "parcel src/acccount.pug";
+
   },
   "repository": {
     "type": "git",
