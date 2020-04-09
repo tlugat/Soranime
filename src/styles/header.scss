@@ -15,4 +15,18 @@
   &__account {
     padding-right: 2rem;
   }
+  &__logIn {
+    padding-right: 2rem;
+
+    button {
+      border: #1b9aaa solid 1px;
+      border-radius: 2px;
+      padding: 0.3rem 1rem;
+
+      a {
+        text-decoration: none;
+        color: #1b9aaa;
+      }
+    }
+  }
 }

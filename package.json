@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel src/landing.pug"
+    "serve": "parcel src/landing.pug",
+    "shonen": "parcel src/shonen.pug"
   },
   "repository": {
     "type": "git",
