@@ -1,0 +1,63 @@
+.landingPage {
+  display: flex;
+}
+
+.register {
+  padding-top: 1rem;
+  font-family: helvetica;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: var(--main-h1);
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
+
+.register__login {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--main-fontSize);
+
+    input {
+      margin-top: 1rem;
+      border-radius: 4px;
+      padding: 0.5rem 8rem 0.5rem 0.5rem;
+    }
+    label {
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+  }
+  &__submit {
+    margin-top: 3rem;
+    button {
+      padding: 0.5rem 2rem;
+      background-color: #fcad51;
+      color: white;
+      font-size: var(--main-fontSize);
+      border-radius: 4px;
+      border: none;
+    }
+  }
+}
+
+.illustration {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(../assets/img/pony-tailleft.png);
+  background-repeat: no-repeat;
+}

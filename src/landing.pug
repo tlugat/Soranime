@@ -6,11 +6,28 @@
     <link rel="stylesheet" href="styles/style.scss" />
     <title>Soranime</title>
   </head>
-  <body>
-    include includes/headerLanding.pug
-    main(class="main")
-      section(class="inscription")
-        
-    include includes/footer.pug
+  <body class="landingPage">
+    section.illustration
+      <img class="header__logoImg"src="assets/img/logo.png" alt="logo soranim avec caractère japonais"/>
+    section.register
+      div.register__login
+        button
+          a(href="") Se connecter
+      h1.register__title Inscrivez-vous dès<br>maintenant
+      form.register__form.form
+        div.form__group
+          label(for="pseudo") Pseudo
+          input(type="text" id="pseudo" placeholder="Teo_le_boss" name="pseudo")
+        div.form__group
+          label(for="password") Mot de passe
+          input(type="password" id="password" placeholder="********" name="password")
+          label(for="password") Confirmer le mot de passe
+          input(type="password" id="password" placeholder="********" name="password")  
+        div.form__group
+          label(for="email") Adresse e-mail
+          input(type="email" id="email" placeholder="teo.lugat@hetic.net" name="email")
+        div.form__submit
+          button(type="submit" id="register") S'inscrire
+    
   </body>
 </html>
