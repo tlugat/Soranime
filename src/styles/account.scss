@@ -1,15 +1,41 @@
 body {
   font-family: Helvetica;
 }
+
+.bigtitle{
+  display:flex;
+}
 .maintitle {
   font-size: var(--main-h1);
   font-weight: bold;
   font-family: Arial;
+  margin-left: 10vw;
+  margin-top:40px;
+}
+
+.retour{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #535353;
+  align-items: center;
+}
+
+.retourtitle{
+  margin-left: 10px;
+}
+.underline{
+  border-bottom:solid;
+  width:700px;
+  border-width: medium;
 }
 
 .allinfo {
   font-size: var(--main-fontSize);
   text-align: left;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .infosperso {
@@ -28,6 +54,7 @@ body {
   width: 130px;
   height: 30px;
   color: white;
+  border-radius: 4px;
 }
 
 .description {
@@ -58,12 +85,35 @@ body {
 }
 
 .profilsdescription {
-  margin-right: 20px;
+  margin-right: 50px;
+  display: flex;
+  align-items: flex-end;
+  p{
+    margin-bottom: 5px;
+  }
+  .supprimer{
+    color: #397294;
+  }
 }
 
 .continue {
+  display: flex;
+  justify-content: space-around;
   border: solid 1px #397294;
-  padding: 12px, 41px;
+  color:#397294 ;
+  padding: 5px;
+  margin-left: 82vw;
+  width: 180px;
+  height: 34px;
   background: white;
-  align-items: flex-end;
+  border-radius: 2px;
+  margin-bottom: 100px;
+  position: relative;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.card{
+  display: flex;
+  align-items: center;
 }
