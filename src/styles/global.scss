@@ -2,4 +2,18 @@
   --main-h1: 36px;
   --main-h2: 24px;
   --main-fontSize: 14px;
+  --main-shadow: 3px 6px 4px rgba(0, 0, 0, 0.199);
+  --main-blue: #1b9aaa;
+}
+
+.retour {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #3e3e3e;
+
+  &__text {
+    padding-left: 0.5rem;
+    font-size: 16px;
+  }
 }

@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.scss" />
-    <title>Soranime</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.scss">
+    <title>soranime</title>
+</head>
   <body>
-    <section class="btn_return">
-      //- <img src=".jpg" alt="arrow_return"/>
-      <p>Retour</p>
+  include includes/header.pug
+    <section class="presentation">
+      <img class="presentation__img" src="assets/img/Steins_gate_svg.png" alt="Steins_gate_svg">
+      <article class="presentation__desc">
+        <h1 class="presentation__desc__title">STEINS GATE</h1>
+        <p class="presentation__desc__rec">Recommandé à 94%</p>
+        <p class="presentation__desc__type">Drama / Sci-Fi - 2 saisons - 24 épisodes</p>
+        <p class="presentation__desc__txt">L'histoire se déroule dans le quartier otaku d'Akihabara, et porte surun groupe d'amis qui ont transformé leur micro-ondes par inadvertance en dispositif pouvant envoyer des messages texte vers le passé. Dans le but de comprendre ce phénomène ils effectuent différentes expériences concernant le voyage dans le temps. Ils sont vite traqués par le centre de recherche CERN (ou SERN), qui réalise ses propres recherches sur les voyages temporels. Rintaro va donc utiliser la capacité du four à micro-ondes et se rendre rapidement compte que chaque modification du passé a un impact irréversible sur le présent, à cause de la théorie des mondes multiples.</p>
+        <div class="presentation__desc__cta">
+          <a href="#">
+            <button class="presentation__desc__cta__button">Regarder</button></a>
+          <article class="presentation__desc__fav">
+            <img src="assets/icones/heart.svg" alt="#">
+            <p>Ajouter aux favoris</p>
+          </article>
+        </div>
+        <article class="presentation__ep">
+          <a href="#"><p>Episode</p></a>
+          <a href="#"><img src="assets/icones/bottom-arrow.svg" alt=""></a>
+      </article>
+      </article>
+    
     </section>
-    <section class="img_film">
-      <img src="assets/img/Steins_gate_svg.png" alt="img_steins_gate"/>
-    </section>
-    <section class="title">
-      <p>Steins Gate</p>
-    </section>
-    <section class="details_film">
-      <div class="recommandation">
-        <p>Recommandé à 94%</p>
-      </div>
-      <div class="episods">
-        <p>Drama / Sci-Fi - 2 saisons - 24 épisodes</p>
-      </div>
-    </section>
-    <section class="paragraph">
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget vulputate diam. Mauris tincidunt elit quis est gravida, sit amet elementum turpis finibus. Integer ultrices tristique ornare. Etiam ac purus at lorem dictum efficitur eu ac ligula. Nam sed mauris tristique, vulputate dui in, blandit sem. Vestibulum rhoncus sem sed neque varius scelerisque. Phasellus ut scelerisque mauris. Phasellus tincidunt sagittis quam ac ullamcorper. 
-      </p>
-    </section>
-    <section class="cta">
-      <div class="btn_regarder">
-        <p>Regarder</p>
-      </div>
-      <div class="btn_favorite">
-      <!-- <img src=".jpg" alt="heart_favorite"/> -->
-        <p>Ajouter aux favoris</p>
-      </div>
-    </section>
-    <section class="btn_episods">
-      <p>Episodes</p>
-      //- <img src=".jpg" alt="arrow_episods"/>
-    </section>
+    include includes/footer.pug
   </body>
 </html>
