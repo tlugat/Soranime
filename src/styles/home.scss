@@ -35,6 +35,7 @@
     }
   }
 }
+
 .new {
   width: 90vw;
   margin: auto;
@@ -78,4 +79,9 @@
     display: flex;
     overflow: hidden;
   }
+}
+    &__list{
+        display: flex;
+        overflow: hidden;
+    }
 }
