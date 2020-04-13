@@ -36,16 +36,20 @@ body {
   text-align: left;
   margin-left: 20vw;
   margin-right: 20vw;
+  display: flex;
 }
 
 .infosperso {
   display: flex;
   justify-content: space-around;
 }
-
+.titles{
+  flex-direction: column;
+}
 .title {
   font-size: 20px;
   font-weight: medium;
+  margin: 10vh;
 }
 
 .modifier {
@@ -57,15 +61,22 @@ body {
   border-radius: 4px;
 }
 
+.descriptions{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
 .description {
   text-align: left;
   margin-right: 30px;
+  margin: 5vh;
 }
 
-.block {
+.buttons{
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .forfait {
@@ -86,6 +97,7 @@ body {
 
 .profilsdescription {
   margin-right: 50px;
+  margin-left: 10px;
   display: flex;
   align-items: flex-end;
   p{
