@@ -35,12 +35,14 @@
             height: 30px;
         }
     }
+  }
 }
 
 .new{
     width: 90vw;
     margin:auto;
     margin-bottom: 3vh;
+
     &__top{
         display: flex;
         justify-content: space-between;
@@ -53,8 +55,8 @@
         font-size: var(--main-fontSize);
     }
     &__list{
-        display: flex;
         justify-content: space-between;
+        display: inline-block;
     }
     img{
         cursor: pointer;
@@ -80,6 +82,15 @@
         font-size: var(--main-fontSize);
         margin-right: 5vw;
     }
+  }
+  &__more {
+    font-size: var(--main-fontSize);
+  }
+  &__list {
+    display: flex;
+    overflow: hidden;
+  }
+}
     &__list{
         padding-top:1em;
         padding-bottom:1em;
