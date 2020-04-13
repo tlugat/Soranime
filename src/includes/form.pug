@@ -18,9 +18,9 @@
   </svg>
   </div>
 
-  // login register
+  // login form
   <form id="login" class="input-group animated fadeInRight">
-    <input type="text" class="input-group__field" id="userId" name="userId" placeholder="User ID" required>
+    <input type="text" class="input-group__field" id="username" name="username" placeholder="Username" required>
     <input type="password" class="input-group__field" id="password" name="password" placeholder="Enter password" required>
     <div class="checkbox-group">
       <input type="checkbox" class="checkbox-group__checkbox" name="checkbox" id="checkbox">
@@ -30,10 +30,10 @@
   </form>
 
   // register form
-  <form id="register" class="input-group animated fadeInLeft">
-    <input type="text" class="input-group__field" id="userId" name="userId" placeholder="User ID" required>
+  <form method="post" action="php/register.php" id="register" class="input-group animated fadeInLeft">
+    <input type="text" class="input-group__field" id="username" name="username" placeholder="Username" required>
     <input type="password" class="input-group__field" id="password" name="password" placeholder="Enter a password" required>
-    <input type="password" class="input-group__field" id="password" name="confirmPassword" placeholder="Confirm your password" required>
+    <input type="password" class="input-group__field" id="password" name="password_confirm" placeholder="Confirm your password" required>
     <input type="email" class="input-group__field" id="email" name="email" placeholder="Enter your email" required>
     <div class="checkbox-group checkbox-group--register">
       <input type="checkbox" class="checkbox-group__checkbox" name="checkbox" id="checkbox" required>
