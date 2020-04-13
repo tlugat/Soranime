@@ -8,79 +8,49 @@
 </head>
 <body>
   include includes/header.pug
-  <div class="retour">
-    <img class="retourpic" src="assets/img/Kylian/arrow.svg">
-    <p class="retourtitle"> Retour</p>
-  </div>
-  <section class="bigtitle">
-  <h1 class="maintitle">Mon compte</h1>
-  <div class="underline"  height="5px"></div>
-  </section>
-
-  <section class="allinfo">
-
-    <section class="Titles" >
-      <h2 class="title">Infos Perso</h2>
-      <h2 class="title">Facture</h2>
-      <h2 class="title">Forfait</h2>
-      <h2 class="title">Profils</h2>
-    </section>
-
-    <section class="descriptions">
-      <div class="description">
-        <p>adresse mail:ledevcgenial@hetic.net</p>
-        <p>Mot de passe:********** </p>
-        <p>Téléphone:0648538412</p>
-      </div>
-
-      <div class="description">
-      <p>Facturation:12/08/2020</p>
-      <div class="card">
-        <img src="assets/img/Kylian/MasterCard.png">
-        <p>.... .... .... 1854</p>
-      </div>
-      <p>Promotion: étudiant</p>
-      </div>
-
-      <p class="description">Ultra HD</p>
-
-      <div class="allprofilsdescription">
-        <div class="profilsdescription">
-          <img src="assets/img/Kylian/Profil_1.png" alt=""/>
-          <div class="infocompte">
-            <p class="nom">Mangebcp</p>
-            <p class="supprimer">Supprimer</p>
-          </div>
-        </div>
-
-        <div class="profilsdescription">
-          <img src="assets/img/Kylian/Profil_2.png" alt=""/>
-          <div class="infocompte">
-            <p class="nom">Hellocmoi</p>
-            <p class="supprimer">Supprimer</p>
-          </div>
-        </div>
-
-        <div class="profilsdescription">
-          <img src="assets/img/Kylian/Profil_3.png" alt=""/>
-          <div class="infocompte">
-            <p class="nom">Salutsalu</p>
-            <p class="supprimer">Supprimer</p>
-          </div>
-        </div>
-    </section>
-
-    <section class="buttons">
-      <button class="modifier">Modifier</button>
-      <button class="modifier">Modifier</button>
-      <button class="modifier">Modifier</button>
-      <button class="modifier">Modifier</button>
-  </section>
-</section>
-  <button class="continue"> 
-  <p>Continuer l'épisode <p>
-  <img src="assets/img/Kylian/continue.svg">
-   </button>
+  include includes/retour.pug
+    h1.mainTitle Mon compte
+  section.userInfo
+    section.userInfo__section
+      h2.userInfo__title Infos perso
+      div.userInfo__text--perso
+        p Jean.mangebeaucoup@gmail.com
+        p Mot de passe: **********
+        p Tél: 0764851323
+      button.userInfo__modifier Modifier
+    section.userInfo__section
+      h2.userInfo__title Facture
+      div.userInfo__text
+        p Prochaine date de facturation: 12/ 08/ 2020
+        div.userInfo__mastercard
+          <img src="assets/img/Kylian/MasterCard.png">
+          p <span>⠂⠂⠂⠂  ⠂⠂⠂⠂  ⠂⠂⠂⠂ 1854
+        p Promotion: étudiant
+      button.userInfo__modifier Modifier
+    section.userInfo__section
+      h2.userInfo__title Forfait
+      p.userInfo__ultraHd Ultra HD
+      button.userInfo__modifier Modifier
+    section.userInfo__section
+      h2.userInfo__title Profils
+      div.userInfos__profils.profils
+        div.profils__profil
+          <img src="assets/img/Kylian/Profil_1.png">
+          div.profils__text
+            p Kylian
+            button Delete
+        div.profils__profil
+          <img src="assets/img/Kylian/Profil_2.png">
+          div.profils__text
+            p Brontis
+            button Delete
+        div.profils__profil
+          <img src="assets/img/Kylian/Profil_3.png">
+          div.profils__text
+            p Teo le boss
+            button Delete
+      button.userInfo__modifier Modifier
+    
   include includes/footer.pug
 </body>
 </html>
