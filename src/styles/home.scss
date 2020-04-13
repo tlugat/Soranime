@@ -11,7 +11,7 @@
     }
     &__wrapper{
         position: absolute;
-        top:15vh;
+        top:2vh;
         left: 5vw;
     }
     &__title{
@@ -35,13 +35,13 @@
             height: 30px;
         }
     }
+    &__logo{
+        width:50%;
+    }
   }
 
 .new{
-    width: 90vw;
-    margin:auto;
     margin-bottom: 3vh;
-
     &__top{
         display: flex;
         justify-content: space-between;
@@ -49,17 +49,24 @@
     }
     &__title{
         font-size: var(--main-h2);
+        padding-left:5vw;
     }
     &__more{
         font-size: var(--main-fontSize);
+        margin-right: 5vw;
     }
     &__list{
+        padding-top:2em;
+        padding-bottom:2em;
+        padding-left:5vw;
         display:flex;
         justify-content: space-between;
+        overflow: hidden;
     }
     img{
         cursor: pointer;
         transition: transform 0.2s ease-out;
+        margin-right:5px;
         &:hover {
             transform: scale(1.2);
         }
