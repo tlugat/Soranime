@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .firstSection{
     width: 90vw;
     margin:auto;
@@ -35,6 +39,7 @@
         }
     }
 }
+
 .new{
     width: 90vw;
     margin:auto;
@@ -55,9 +60,10 @@
         justify-content: space-between;
     }
 }
+
 .cat{
-    width: 90vw;
-    margin:auto;
+    width: 95vw;
+    margin-left:auto;
     margin-bottom: 3vh;
     &__top{
         display: flex;
@@ -75,6 +81,7 @@
         font-size: var(--main-fontSize);
     }
     &__list{
-        overflow-x: visible;
+        display: flex;
+        overflow: hidden;
     }
 }
