@@ -44,6 +44,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 3vh;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3vh;
+    }
+    &__title{
+        font-size: var(--main-h2);
+    }
+    &__more{
+        font-size: var(--main-fontSize);
+    }
+    &__list{
+        justify-content: space-between;
+        display: inline-block;
+    }
+
   }
   &__title {
     font-size: var(--main-h2);
@@ -55,6 +72,7 @@
     display: flex;
     justify-content: space-between;
   }
+
 }
 .cat {
   width: 95vw;
@@ -81,7 +99,13 @@
   }
 }
     &__list{
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
         display: flex;
         overflow: hidden;
+
     }
 }
