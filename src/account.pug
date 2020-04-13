@@ -8,6 +8,7 @@
 </head>
 <body>
   include includes/header.pug
+
   <div class="retour">
     <img class="retourpic" src="assets/img/Kylian/arrow.svg">
     <p class="retourtitle"> Retour</p>
@@ -81,6 +82,51 @@
     <p>Continuer l'épisode <p>
     <img src="assets/img/Kylian/continue.svg">
   </button>
+
+  include includes/retour.pug
+    h1.mainTitle Mon compte
+  section.userInfo
+    section.userInfo__section
+      h2.userInfo__title Infos perso
+      div.userInfo__text--perso
+        p Jean.mangebeaucoup@gmail.com
+        p Mot de passe: **********
+        p Tél: 0764851323
+      button.userInfo__modifier Modifier
+    section.userInfo__section
+      h2.userInfo__title Facture
+      div.userInfo__text
+        p Prochaine date de facturation: 12/ 08/ 2020
+        div.userInfo__mastercard
+          <img src="assets/img/Kylian/MasterCard.png">
+          p <span>⠂⠂⠂⠂  ⠂⠂⠂⠂  ⠂⠂⠂⠂ 1854
+        p Promotion: étudiant
+      button.userInfo__modifier Modifier
+    section.userInfo__section
+      h2.userInfo__title Forfait
+      p.userInfo__ultraHd Ultra HD
+      button.userInfo__modifier Modifier
+    section.userInfo__section
+      h2.userInfo__title Profils
+      div.userInfos__profils.profils
+        div.profils__profil
+          <img src="assets/img/Kylian/Profil_1.png">
+          div.profils__text
+            p Kylian
+            button Delete
+        div.profils__profil
+          <img src="assets/img/Kylian/Profil_2.png">
+          div.profils__text
+            p Brontis
+            button Delete
+        div.profils__profil
+          <img src="assets/img/Kylian/Profil_3.png">
+          div.profils__text
+            p Teo le boss
+            button Delete
+      button.userInfo__modifier Modifier
+    
+
   include includes/footer.pug
 </body>
 </html>
