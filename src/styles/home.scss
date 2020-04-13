@@ -5,12 +5,13 @@
     margin-bottom: 5vh;
     &__picture{
         width:100%;
+        height:550px;
         box-shadow: var(--main-shadow);
         border-radius: 30px;
     }
     &__wrapper{
         position: absolute;
-        top:5vh;
+        top:12vh;
         left: 5vw;
     }
     &__title{
@@ -35,6 +36,7 @@
         }
     }
 }
+
 .new{
     width: 90vw;
     margin:auto;
@@ -54,10 +56,16 @@
         display: flex;
         justify-content: space-between;
     }
+    img{
+        cursor: pointer;
+        transition: transform 0.2s ease-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
+
 .cat{
-    width: 90vw;
-    margin:auto;
     margin-bottom: 3vh;
     &__top{
         display: flex;
@@ -66,15 +74,28 @@
     }
     &__title{
         font-size: var(--main-h2);
-        a{
-            text-decoration: none;
-            color: black;
-        }
+        padding-left:5vw;
     }
     &__more{
         font-size: var(--main-fontSize);
+        margin-right: 5vw;
     }
     &__list{
-        overflow-x: visible;
+        padding-top:1em;
+        padding-bottom:1em;
+        padding-left:5vw;
+        display: flex;
+        overflow: hidden;
+        img{
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
     }
 }

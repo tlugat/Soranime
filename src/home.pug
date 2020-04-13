@@ -22,7 +22,7 @@
         .new__top.top
             h2.new__title Nouveautés
             .new__more
-                p.texte  Voir plus
+                p.texte  Voir plus >
 
         .new__list
             img.new__poster(src="assets/img/Nouveauté/Fate_Stay_Night.png")
@@ -34,66 +34,67 @@
         .cat__top.top
             h2.cat__title Top 10
             .cat__more
-                p.texte  Voir plus
+                p.texte  Voir plus >
 
         .cat__list
-            img.new__poster(src="assets/img/Top10/Naruto.png")
-            img.new__poster(src="assets/img/Top10/Code_Geass.png")
-            img.new__poster(src="assets/img/Top10/Samurai_Champloo.png")
-            img.new__poster(src="assets/img/Top10/Le_château_ambulant.png")   
-            img.new__poster(src="assets/img/Top10/Princesse_Mononoke.png")
+            img(src="assets/img/Top10/Naruto.png")
+            img(src="assets/img/Top10/Code_Geass.png")
+            img(src="assets/img/Top10/Samurai_Champloo.png")
+            img(src="assets/img/Top10/Le_château_ambulant.png") 
+            img(src="assets/img/Top10/Princesse_Mononoke.png")
 
     section.main__cat.cat
         .cat__top.top
             <h2 class="cat__title"><a class="cat__link" href="shonen.pug">Shonen</a></h2>
             .cat__more
-                p.texte  Voir plus
+                <a href="shonen.pug">  Voir plus ></a>
 
         .cat__list
-            img.new__poster(src="assets/img/Shonen/Jojos_bizarre_adventure.png")
-            img.new__poster(src="assets/img/Shonen/Naruto.png")
-            img.new__poster(src="assets/img/Shonen/Inazuma_eleven.png")
-            img.new__poster(src="assets/img/Shonen/Yu_Gi_Ho.png")   
-            img.new__poster(src="assets/img/Shonen/Le_château_ambulant.png")
+            img.cat__poster(src="assets/img/Shonen/Jojos_bizarre_adventure.png")
+            img.cat__poster(src="assets/img/Shonen/Naruto.png")
+            img.cat__poster(src="assets/img/Shonen/Inazuma_eleven.png")
+            img.cat__poster(src="assets/img/Shonen/Yu_Gi_Ho.png")   
+            img.cat__poster(src="assets/img/Shonen/Le_château_ambulant.png")
 
     section.main__cat.cat
         .cat__top.top
             h2.cat__title Shojo
             .cat__more
-                p.texte  Voir plus
+                p.texte  Voir plus >
 
         .cat__list
-            img.new__poster(src="assets/img/Shojo/Black_butler.png")
-            img.new__poster(src="assets/img/Shojo/Vampire_diaries.png")
-            img.new__poster(src="assets/img/Shojo/Sawako.png")
-            img.new__poster(src="assets/img/Shojo/Karakai_Jouzo_no_Takagi-san.png")   
-            img.new__poster(src="assets/img/Shojo/Anonyme_shonen.png")
+            img.cat__poster(src="assets/img/Shojo/Black_butler.png")
+            img.cat__poster(src="assets/img/Shojo/Vampire_diaries.png")
+            img.cat__poster(src="assets/img/Shojo/Sawako.png")
+            img.cat__poster(src="assets/img/Shojo/Karakai_Jouzo_no_Takagi-san.png")   
+            img.cat__poster(src="assets/img/Shojo/Anonyme_shonen.png")
     
     section.main__cat.cat
         .cat__top.top
-            h2.cat__title Seinen
+            <h2 class="cat__title"><a href="seinen.pug">Seinen</a></h2>
             .cat__more
-                p.texte  Voir plus
+                <a href="seinen.pug">  Voir plus ></a>
 
         .cat__list
-            img.new__poster(src="assets/img/Seinen/Hellsing.png")
-            img.new__poster(src="assets/img/Seinen/Neon_genesis_evangelion.png")
-            img.new__poster(src="assets/img/Seinen/Steins_gate.png")
-            img.new__poster(src="assets/img/Seinen/Death_note.png")   
-            img.new__poster(src="assets/img/Seinen/Gantz.png")
+            img.cat__poster(src="assets/img/Seinen/Hellsing.png")
+            img.cat__poster(src="assets/img/Seinen/Neon_genesis_evangelion.png")
+            img.cat__poster(src="assets/img/Seinen/Steins_gate.png")
+            img.cat__poster(src="assets/img/Seinen/Death_note.png")   
+            img.cat__poster(src="assets/img/Seinen/Gantz.png")
 
     section.main__cat.cat
         .cat__top.top
             <h2 class="cat__title"><a href="films.pug">Film d'animation</a></h2>
             .cat__more
-                p.texte  Voir plus
+                <a href="films.pug">  Voir plus ></a>
 
         .cat__list
-            img.new__poster(src="assets/img/Film/Naruto_the_last.png")
-            img.new__poster(src="assets/img/Film/Fairy_tail_dragon_cry.png")
-            img.new__poster(src="assets/img/Film/Dragon_ball_Z_battle_of gods.png")
-            img.new__poster(src="assets/img/Film/Le_tombeau_des_lucioles.png")   
-            img.new__poster(src="assets/img/Film/Le_garçon_et_la_bête.png")
+            img.cat__poster(src="assets/img/Film/Naruto_the_last.png")
+            img.cat__poster(src="assets/img/Film/Fairy_tail_dragon_cry.png")
+            img.cat__poster(src="assets/img/Film/Dragon_ball_Z_battle_of gods.png")
+            img.cat__poster(src="assets/img/Film/Le_tombeau_des_lucioles.png")   
+            img.cat__poster(src="assets/img/Film/Le_garçon_et_la_bête.png")
+
   include includes/footer.pug
   
   </body>
