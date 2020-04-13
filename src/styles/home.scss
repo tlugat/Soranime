@@ -1,3 +1,16 @@
+a { 
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    background-size: 0 100%;
+    background: linear-gradient(to top,#2C698D 0, #2C698D 10%, transparent 10.01%) no-repeat;
+    transition: background-size .3s;
+    background-size: 0 100%;
+}
+a:hover {
+    background-size: 100% 100%;
+}
+
 .firstSection{
     width: 90vw;
     margin:auto;
@@ -11,7 +24,7 @@
     }
     &__wrapper{
         position: absolute;
-        top:12vh;
+        top:15vh;
         left: 5vw;
     }
     &__title{
@@ -94,9 +107,5 @@
                 transform: scale(1.2);
             }
         }
-    }
-    a{
-        text-decoration: none;
-        color: black;
     }
 }
