@@ -1,0 +1,56 @@
+.allVid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+
+  &__video {
+    width: 100%;
+  }
+  
+
+  &__controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+
+  &__color-bar {
+    height: 5px;
+    width: 100%;
+    background: grey;
+    cursor: pointer;
+  }
+  
+    &__color-juice{
+      height: 5px;
+      background-color: white;
+    }
+  }
+}
+
+.buttons {
+  padding: 10px;
+  right: 50%;
+
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background:none;
+    justify-content: center;
+    
+  }
+  
+  #buttons__play-pause::before {
+    content: url(../assets/icones/play.svg);
+  }
+  #buttons__play-pause.play::before {
+    content: url(../assets/icones/play.svg);
+  }
+
+  #buttons__play-pause.pause::before {
+    content: url(../assets/icones/pause.svg);
+  }
+}
