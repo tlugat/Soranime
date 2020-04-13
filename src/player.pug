@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.scss" />
-    <title>Titre de l'anime</title>
-  </head>
-  <body>
-    <video class="video" src=""></video>
-    <div class="controller">
-    <button class="play">Play / Pause</button>
-    <button class="volume-down">-</button>
-    <button class="volume-up">+</button>
-    <button class="back">-10s</button>
-    <button class="move">+10s</button>
-    </div>
-    <script src="./JavaScript/player.js"></script>
-  </body>
-</html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+
+
+
+    <link rel="stylesheet" href="styles/style.scss">
+</head>
+
+<body>
+  <div class="container">
+
+      <div class="allVid">
+          <video src="assets/vidéos/naruto-vs-pain.mp4" class="allVid__video"></video>
+
+          <div class="allVid__controls">
+              <div class="allVid__controls__color-bar">
+                  <div class="allVid__controls__color-juice"></div>
+              </div>
+
+              <div class="buttons">
+                <button class="buttons__back"><img src="./assets/icones/-10s.svg" alt="-10s"></button>
+                <button id="buttons__play-pause"></button>
+                <button class="buttons__move"><img src="./assets/icones/10s.svg" alt="+10s"></button>
+                <button class="buttons__volume-down"><img src="./assets/icones/btn_moins.svg" alt="-"></button>
+                <button class="buttons__volume-up"><img src="./assets/icones/btn_plus.svg" alt="+"></button>
+                  
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+
+
+  <script src="./Javascript/player.js"></script>
+</body>
