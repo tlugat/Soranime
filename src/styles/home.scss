@@ -51,8 +51,8 @@
         font-size: var(--main-fontSize);
     }
     &__list{
-        display: flex;
         justify-content: space-between;
+        display: inline-block;
     }
 }
 .cat{
@@ -75,6 +75,8 @@
         font-size: var(--main-fontSize);
     }
     &__list{
-        overflow-x: visible;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
     }
 }
