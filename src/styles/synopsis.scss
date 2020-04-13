@@ -3,8 +3,9 @@
   flex-direction: row;
   background-color: white;
   transition: height 0.5s, width 0.5s,left 0.5s, bottom 0.5s;
-  
+  padding-bottom: 40px;
 }
+
 .synopsis__img{
   margin:5px;
 }
@@ -16,15 +17,25 @@
   flex-direction: column;
 }
 
+.synopsis__titlecross{
+  display: flex;
+  justify-content: space-between;
+}
+
 .synopsis__title{
   font-size: var(--main-h1);
   margin-bottom: 20px;
 }
+.synopsis__cross{
+  cursor: pointer;
+}
 
 .close{
   transform: translate(calc(-50vh + 40px), calc(50vh - 40px)) scale(0);
-  opacity: 0;
   transition : transform 2s, opacity 0.3s;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;  
 }
 
 .more {

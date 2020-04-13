@@ -9,9 +9,24 @@
 <body> 
     include includes/header.pug
     <h1 class="films__title"> Film d'animation </h1>
+    
     <section class="films"> 
         <article class='films__posters'>
-            <a href="#"><img class="films__posters__img" src="assets/img/Film/A_silent_voice_the_movie.png"/></a>
+            <a href="#"><img class="films__posters__img" id="film" src="assets/img/Film/A_silent_voice_the_movie.png"/></a>
+            <section class="synopsis" id="synopsis">
+            <img class="synopsis__img" src="assets/img/Kylian/silentvoice.png" height="342px" width="700px">
+            <div class="synopsis__text" width="50vw">
+                <div class="synopsis__titlecross">
+                <h1 class="synopsis__title">A Silent voice</h1>
+                <img src="assets/img/Kylian/cross.png" class="synopsis__cross" id="cross"width="20px" height="20px">
+                </div>
+                <p class="synopsis__body">Nishimiya est une élève douce et attentionnée. Chaque jour, pourtant, elle est harcelée par Ishida, car elle est sourde. Dénoncé pour son comportement, le garçon est à son tour mis à l'écart et rejeté par ses camarades. Des années plus tard, il apprend la langue des signes... et part à la recherche de la jeune fille. </p>
+                <div class="synopsis__buttons">
+                    <button class="more">VOIR PLUS</button>
+                    <button class="more">BANDE ANNONCE</button>
+                </div>
+            </div>
+            </section>
             <a href="#"><img class="films__posters__img" src="assets/img/Film/Akira.png"/></a>
             <a href="#"><img class="films__posters__img" src="assets/img/Film/Albator_corsaire_de_l'espace.png"/></a>
             <a href="#"><img class="films__posters__img" src="assets/img/Film/Fairy_tail_dragon_cry.png"></a>
@@ -40,3 +55,4 @@
     include includes/footer.pug
     </body>
 </html>
+script(src="/JavaScript/synopsis.js")
