@@ -44,10 +44,12 @@
             
         .cat__list
 
-            img.new__poster(src="assets/img/Homepage/Top10/Naruto.png" id="film")
-            img.new__poster(src="assets/img/Homepage/Top10/Code_geass.png")
-            img.new__poster(src="assets/img/Homepage/Top10/Samurai_Champloo.png")
-            img.new__poster(src="assets/img/Homepage/Top10/Le_chateau_ambulant.png")   
+
+            img.naruto(src="assets/img/Homepage/Top10/Naruto.png" id="film")
+            img.codeGeass(src="assets/img/Homepage/Top10/Code_geass.png")
+            img.samuraiChamploo(src="assets/img/Homepage/Top10/Samurai_Champloo.png")
+            img.chateauAmbulant(src="assets/img/Homepage/Top10/Le_chateau_ambulant.png")   
+
 
             img(src="assets/img/Homepage/Top10/Naruto.png")
             img(src="assets/img/Homepage/Top10/Code_geass.png")
@@ -57,20 +59,7 @@
             img(src="assets/img/Homepage/Seinen/Evangelion.png")
             img(src="assets/img/Shonen/Boku_no_Hero.png")
             
-        <section class="synopsis" id="synopsis">
-            <img class="synopsis__img" src="assets/img/Homepage/Top10/Naruto-synopsis.jpg" height="342px" width="700px">
-            <div class="synopsis__text" width="50vw">
-                <div class="synopsis__titlecross" >
-                <h1 class="synopsis__title">Naruto</h1>
-                <img src="assets/img/Kylian/cross.png" class="synopsis__cross" id="cross"width="20px" height="20px">
-                </div>
-                <p class="synopsis__body" > Naruto est un garçon un peu spécial. Solitaire au caractère <br>fougueux,il n'est pas des plus appréciés dans son village. Malgré <br>cela, il garde au fond de lui une ambition: celle de devenir un<br> "maître Hokage", la plus haute distinction dans l'ordre des ninjas, <br>et ainsi obtenir la reconnaissance de ses pairs mais cela ne sera<br> pas de  tout repos ... Suivez l'éternel farceur dans sa quête du <br>secret de  sa naissance et de la conquête des fruits de son ambition !</p>
-                <div class="synopsis__buttons">
-                    <button class="more">VOIR PLUS</button>
-                    <button class="more">BANDE ANNONCE</button>
-                </div>
-            </div>
-            </section>
+        include includes/synopsis.pug
 
 
     section.main__cat.cat
@@ -143,7 +132,7 @@
             img(src="assets/img/Film/Le_voyage_de_Chihiro.png")
 
   include includes/footer.pug
-  
+  script(src="/JavaScript/synopsis.js")
   </body>
 </html>
-script(src="/JavaScript/synopsis.js")
+
