@@ -28,10 +28,12 @@
               </svg>
 
         .new__list
-            img(src="assets/img/Homepage/Nouveauté/Fate_Stay_Night.png")
-            img(src="assets/img/Homepage/Nouveauté/Love_is_War.png")
-            img(src="assets/img/Homepage/Nouveauté/Demon_slayer.png")
-            img(src="assets/img/Homepage/Nouveauté/SAO.png")
+            img.fate(src="assets/img/Homepage/Nouveauté/Fate_Stay_Night.png")
+            img.loveIsWar(src="assets/img/Homepage/Nouveauté/Love_is_War.png")
+            img.demonSlayer(src="assets/img/Homepage/Nouveauté/Demon_slayer.png")
+            img.sao(src="assets/img/Homepage/Nouveauté/SAO.png")
+        include includes/synopsis.pug 
+        
 
     section.main__cat.cat
         .cat__top.top
@@ -45,10 +47,10 @@
         .cat__list
 
 
-            img.read.naruto(src="assets/img/Homepage/Top10/Naruto.png" id="film")
-            img.read.codeGeass(src="assets/img/Homepage/Top10/Code_geass.png")
-            img.read.samuraiChamploo(src="assets/img/Homepage/Top10/Samurai_Champloo.png")
-            img.read.chateauAmbulant(src="assets/img/Homepage/Top10/Le_chateau_ambulant.png")   
+            img.naruto(src="assets/img/Homepage/Top10/Naruto.png" id="film")
+            img.codeGeass(src="assets/img/Homepage/Top10/Code_geass.png")
+            img.samuraiChamploo(src="assets/img/Homepage/Top10/Samurai_Champloo.png")
+            img.chateauAmbulant(src="assets/img/Homepage/Top10/Le_chateau_ambulant.png")   
 
             img(src="assets/img/Homepage/Top10/devilman.jpg")
             img(src="assets/img/Homepage/Top10/one_punch_man.webp")
@@ -57,7 +59,7 @@
             img(src="assets/img/Homepage/Shonen/Boku_no_Hero.png")
             img(src="assets/img/Homepage/Seinen/Evangelion.png")
             
-        include includes/synopsis.pug
+       
 
 
     section.main__cat.cat
