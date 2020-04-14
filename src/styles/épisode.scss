@@ -8,12 +8,12 @@ body{
     flex-direction: column;
     align-content: flex-start;
     height: 60vh;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-right: 5vw;
   }
 
   &__ep {
-  margin-top: 150px;
+    margin-top: 150px;
     a {
       text-decoration: none;
       color: black;
@@ -23,7 +23,6 @@ body{
       margin-left: 190px;
       margin-bottom: 10px;
     }
-    
   }
 }
 
@@ -36,48 +35,47 @@ body{
   &__title {
     font-weight: bold;
     font-size: 96px;
-    margin-top: 200px;
+    margin-top: 10vh;
     margin-bottom: 50px;
   }
-  
+
   &__rec {
     font-size: 20px;
     font-weight: bold;
-    color: #1BAA5D;
+    color: #1baa5d;
     margin-bottom: 50px;
   }
-  
+
   &__txt {
     width: 600px;
     font-size: 20px;
     margin-bottom: 20px;
   }
-  
+
   &__type {
     font-size: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-weight: bold;
   }
-  
+
   &__fav {
     display: flex;
     cursor: pointer;
     margin-bottom: 50px;
     img {
       margin-right: 10px;
-
     }
   }
   &__cta {
     display: flex;
-    
+
     button {
       margin-right: 30px;
     }
-  
+
     &__button {
       border: none;
-      background-color: #1B9AAA;
+      background-color: #1b9aaa;
       border-radius: 2px;
       width: 149px;
       height: 34px;
@@ -88,32 +86,41 @@ body{
   }
 }
 
-.listeEp{
-  width:90vw;
-  margin-left:auto;
+.listeEp {
+  width: 90vw;
+  margin-left: auto;
+  &__select {
+    height: 2rem;
+    width: 6rem;
+    font-family: helvetica;
+    font-size: var(--main-font-size);
+    margin-bottom: 2rem;
+    border: solid 0.5px #dddddd;
+    border-radius: 4px;
+  }
   &__saison {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 1em;
   }
-  &__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
-    img{
-      margin-right:10px;
-      width:250px;
-      height:150px;
+    img {
+      margin-right: 10px;
+      width: 250px;
+      height: 150px;
       cursor: pointer;
       transition: transform 0.2s ease-out;
-      border-radius:5px;
+      border-radius: 5px;
       &:hover {
         transform: scale(1.2);
         opacity: 0.8;
       }
     }
-    p{
+    p {
       text-align: center;
-      margin:5px 0 25px 0;
+      margin: 5px 0 25px 0;
     }
-}
+  }
 }
