@@ -4,14 +4,14 @@
 
 .firstSection {
   width: 90vw;
-  margin: auto;
   position: relative;
   margin-bottom: 5vh;
   &__picture {
-    width: 100%;
-    height: 550px;
-    box-shadow: var(--main-shadow);
-    border-radius: 30px;
+    width: 99vw;
+    height: 90vh;
+  }
+  &__logo {
+    width: 20rem;
   }
   &__wrapper {
     position: absolute;
