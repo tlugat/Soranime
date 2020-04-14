@@ -1,6 +1,8 @@
+body{
+  font-family:  Helvetica;
+}
 .presentation {
   display: flex;
-  font-family:  Helvetica;
 
   &__img {
     flex-direction: column;
