@@ -1,3 +1,8 @@
+import fateImg from "../assets/img/Homepage/Nouveauté/fate-synopsis.jpg";
+import loveIsWarImg from "../assets/img/Homepage/Nouveauté/loveiswar-synopsis.jpg";
+import demonSlayerImg from "../assets/img/Homepage/Nouveauté/demonslayer-synopsis.jpg";
+import saoImg from "../assets/img/Homepage/Nouveauté/sao-synopsis.jpg";
+
 const $synopsis = document.querySelector(".synopsis");
 const $cross = document.querySelector(".synopsis__cross");
 const $img = document.querySelector(".synopsis__img");
@@ -8,11 +13,6 @@ $cross.addEventListener("click", function() {
 const $synopsisTitle = document.querySelector(".synopsis__title");
 const $synopsisText = document.querySelector(".synopsis__body");
 
-const $naruto = document.querySelector(".naruto");
-const $codeGeass = document.querySelector(".codeGeass");
-const $samuraiChamploo = document.querySelector(".samuraiChamploo");
-const $chateauAmbulant = document.querySelector(".chateauAmbulant");
-const $princesseMononoke = document.querySelector(".princesseMononoke");
 const $fate = document.querySelector(".fate");
 const $loveIsWar = document.querySelector(".loveIsWar");
 const $demonSlayer = document.querySelector(".demonSlayer");
@@ -45,21 +45,25 @@ const synopsisSao = {
 // synopsis des nouveautés
 $fate.addEventListener("click", function() {
   $synopsis.style.display = "flex";
+  $img.setAttribute("src", fateImg);
   $synopsisTitle.textContent = synopsisFate.title;
   $synopsisText.textContent = synopsisFate.synopsis;
 });
 $loveIsWar.addEventListener("click", function() {
   $synopsis.style.display = "flex";
+  $img.setAttribute("src", loveIsWarImg);
   $synopsisTitle.textContent = synopsisLoveIsWar.title;
   $synopsisText.textContent = synopsisLoveIsWar.synopsis;
 });
 $demonSlayer.addEventListener("click", function() {
   $synopsis.style.display = "flex";
+  $img.setAttribute("src", demonSlayerImg);
   $synopsisTitle.textContent = synopsisDemonSlayer.title;
   $synopsisText.textContent = synopsisDemonSlayer.synopsis;
 });
 $sao.addEventListener("click", function() {
   $synopsis.style.display = "flex";
+  $img.setAttribute("src", saoImg);
   $synopsisTitle.textContent = synopsisSao.title;
   $synopsisText.textContent = synopsisSao.synopsis;
 });
