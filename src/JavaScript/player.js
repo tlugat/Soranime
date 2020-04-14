@@ -2,59 +2,46 @@ import ep from "../assets/videos/naruto-2.mp4";
 
 const volumeUp = document.querySelector(".buttons__volume-up");
 const volumeDown = document.querySelector(".buttons__volume-down");
-const video = document.querySelector('.allVid__video');
-const juice = document.querySelector('.allVid__controls__color-juice');
-const btn = document.getElementById('buttons__play-pause');
-const volumeSlider = document.querySelector('.buttons__volume');
-const orangeBar = document.querySelector('.allVid__controls__color-bar');
+const video = document.querySelector(".allVid__video");
+const juice = document.querySelector(".allVid__controls__color-juice");
+const btn = document.getElementById("buttons__play-pause");
+const volumeSlider = document.querySelector(".buttons__volume");
+const orangeBar = document.querySelector(".allVid__controls__color-bar");
 const move = document.querySelector(".buttons__move");
 const back = document.querySelector(".buttons__back");
 const nextEp = document.querySelector(".buttons_nextEp");
 const source = document.querySelector(".allVid__source");
 
-
-
-// play pause 
+// play pause
 function togglePlayPause() {
-
-    if(video.paused){
-        btn.className="pause";
-        video.play();
-    }
-    else {
-        btn.className = "play";
-        video.pause();
-    }
-
+  if (video.paused) {
+    btn.className = "pause";
+    video.play();
+  } else {
+    btn.className = "play";
+    video.pause();
+  }
 }
 
-btn.onclick = function(){
-    togglePlayPause();
-}
+btn.onclick = function() {
+  togglePlayPause();
+};
 
 video.onclick = function() {
   togglePlayPause();
-} 
+};
 
+// progress bar
 
+video.addEventListener("timeupdate", function() {
+  let juicePos = video.currentTime / video.duration;
 
-// color bar
+  juice.style.width = juicePos * 100 + "%";
 
-video.addEventListener('timeupdate', function(){
-
-    let juicePos = video.currentTime / video.duration;
-
-    juice.style.width = juicePos * 100 + '%';
-
-    if(video.ended) {
-        btn.className ="play";
-    }
-
-
-})
-
-
-
+  if (video.ended) {
+    btn.className = "play";
+  }
+});
 
 // Volume
 
@@ -76,22 +63,15 @@ volumeUp.addEventListener("click", () => {
   console.log(video.volume);
 }); */
 
-
-
-volumeSlider.addEventListener('change', function(){
-
-
+volumeSlider.addEventListener("change", function() {
   video.volume = volumeSlider.value / 100;
-
-})
-
+});
 
 // +/- 10sec
 
 move.addEventListener("click", () => {
   video.currentTime += 10;
 });
-
 
 move.addEventListener("click", () => {
   video.currentTime += 10;
@@ -104,8 +84,6 @@ back.addEventListener("click", () => {
 //Nextep
 
 nextEp.addEventListener("click", () => {
-  source.setAttribute('src', ep);
+  source.setAttribute("src", ep);
   video.load();
-})
-
-
+});

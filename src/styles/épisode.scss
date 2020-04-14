@@ -1,5 +1,5 @@
-body{
-  font-family:  Helvetica;
+body {
+  font-family: Helvetica;
 }
 .presentation {
   display: flex;
@@ -50,6 +50,7 @@ body{
     width: 600px;
     font-size: 20px;
     margin-bottom: 20px;
+    line-height: 1.5rem;
   }
 
   &__type {
@@ -70,7 +71,7 @@ body{
     display: flex;
 
     button {
-      margin-right: 30px;
+      margin-right: 2rem;
     }
 
     &__button {
