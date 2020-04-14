@@ -1,7 +1,7 @@
-import fateImg from "../assets/img/Homepage/Nouveauté/fate-synopsis.jpg";
-import loveIsWarImg from "../assets/img/Homepage/Nouveauté/loveiswar-synopsis.jpg";
-import demonSlayerImg from "../assets/img/Homepage/Nouveauté/demonslayer-synopsis.jpg";
-import saoImg from "../assets/img/Homepage/Nouveauté/sao-synopsis.jpg";
+import fateImg from "../assets/img/Homepage/Nouveauté/fate-synopsis.png";
+import loveIsWarImg from "../assets/img/Homepage/Nouveauté/loveiswar-synopsis.png";
+import demonSlayerImg from "../assets/img/Homepage/Nouveauté/demonslayer-synopsis.png";
+import saoImg from "../assets/img/Homepage/Nouveauté/sao-synopsis.png";
 
 const $synopsis = document.querySelector(".synopsis");
 const $cross = document.querySelector(".synopsis__cross");
@@ -32,7 +32,7 @@ const synopsisLoveIsWar = {
 const synopsisDemonSlayer = {
   title: "Demon slayer",
   synopsis:
-    "Depuis les temps anciens, il existe des rumeurs concernant des démons mangeurs d'hommes qui se cachent dans les bois. Pour cette raison, les citadins locaux ne s'y aventurent jamais la nuit. La légende raconte aussi qu'un tueur déambule la nuit, chassant ces démons assoiffés de sang. Depuis la mort de son père, Tanjirou a pris sur lui pour subvenir aux besoins de sa famille. Malgré cette tragédie, ils réussissent à trouver un peu de bonheur au quotidien. Cependant, ce peu de bonheur se retrouve détruit le jour où Tanjirou découvre que sa famille s'est fait massacrer et que la seule survivante, sa sœur Nezuko, est devenue un démon. À sa grande surprise, Nezuko montre encore des signes d'émotion et de pensées humaines. Ainsi, commence la dure tâche de Tanjirou, celle de combattre les démons et de faire redevenir sa sœur humaine.",
+    "Le Japon, au début du XXe siecle. Un petit marchand de charbon nommé Tanjiro vit une vie sans histoire dans les montagnes. Jusqu'au jour tragique où, après une courte absence, il retrouve son village et sa famille massacrés par un ogre !",
 };
 const synopsisSao = {
   title: "Sword Art Online (S.A.O)",
