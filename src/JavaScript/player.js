@@ -6,6 +6,7 @@ const btn = document.getElementById('buttons__play-pause');
 const orangeBar = document.querySelector('.allVid__controls__color-bar');
 const move = document.querySelector(".buttons__move");
 const back = document.querySelector(".buttons__back");
+const fullScreen = document.querySelector(".buttons__fullScreen")
 
 
 // play pause 
@@ -85,3 +86,9 @@ move.addEventListener("click", () => {
 back.addEventListener("click", () => {
   video.currentTime -= 10;
 });
+
+
+//Full screen
+
+
+
