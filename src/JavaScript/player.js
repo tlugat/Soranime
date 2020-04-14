@@ -1,3 +1,5 @@
+import ep from "../assets/videos/naruto-2.mp4";
+
 const volumeUp = document.querySelector(".buttons__volume-up");
 const volumeDown = document.querySelector(".buttons__volume-down");
 const video = document.querySelector('.allVid__video');
@@ -6,7 +8,9 @@ const btn = document.getElementById('buttons__play-pause');
 const orangeBar = document.querySelector('.allVid__controls__color-bar');
 const move = document.querySelector(".buttons__move");
 const back = document.querySelector(".buttons__back");
-const fullScreen = document.querySelector(".buttons__fullScreen")
+const nextEp = document.querySelector(".buttons_nextEp");
+const source = document.querySelector(".allVid__source");
+
 
 
 // play pause 
@@ -87,8 +91,11 @@ back.addEventListener("click", () => {
   video.currentTime -= 10;
 });
 
+//Nextep
 
-//Full screen
-
+nextEp.addEventListener("click", () => {
+  source.setAttribute('src', ep);
+  video.load();
+})
 
 
