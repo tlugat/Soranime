@@ -120,6 +120,8 @@
     padding-left: 5vw;
     display: flex;
     overflow: hidden;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     img {
       cursor: pointer;
       transition: transform 0.2s ease-out;
