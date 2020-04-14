@@ -10,7 +10,8 @@
     "home": "parcel src/home.pug",
     "account": "parcel src/account.pug",
     "presentation": "parcel src/presentation.pug",
-    "synopsis": "parcel src/synopsis-extention.pug"
+    "synopsis": "parcel src/synopsis-extention.pug",
+    "player": "parcel src/player.pug"
   },
   "repository": {
     "type": "git",
