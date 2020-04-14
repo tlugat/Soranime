@@ -1,8 +1,8 @@
 <div class="form-box">
   <div class="button-box">
     <div id="color-btn" class="button-box__colorBtn animated fadeIn"></div>
-    <button type="button" id ="loginBtn" class="button-box__toggleBtn">Login</button>
-    <button type="button" id="registerBtn" class="button-box__toggleBtn">Register</button>
+    <button type="button" id ="loginBtn" class="button-box__toggleBtn">Se connecter</button>
+    <button type="button" id="registerBtn" class="button-box__toggleBtn">S'enregistrer</button>
     </div>
   <div class="social-icons">
     <svg class="social-icons__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="32" width="32" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -24,9 +24,10 @@
     <input type="password" class="input-group__field" id="password" name="password" placeholder="Enter password" required>
     <div class="checkbox-group">
       <input type="checkbox" class="checkbox-group__checkbox" name="checkbox" id="checkbox">
-      <label for="checkbox">Remember password</label>
+      <label for="checkbox">Se rappeler le mot de passe</label>
     </div>
     <button type="submit" class="input-group__submit">Login</button>
+    <a class="input-group__invite" href="home.pug">Se connecter en tant qu'invité<a/>
   </form>
 
   // register form
@@ -37,9 +38,9 @@
     <input type="email" class="input-group__field" id="email" name="email" placeholder="Enter your email" required>
     <div class="checkbox-group checkbox-group--register">
       <input type="checkbox" class="checkbox-group__checkbox" name="checkbox" id="checkbox" required>
-      <label for="checkbox">I agree with the Terms and Conditions</label>
+      <label for="checkbox">J'accepte les conditions générales d'utilisation</label>
     </div>
-    <button type="submit" class="input-group__submit">Register</button>
+    <button type="submit" class="input-group__submit">Créer un compte</button>
   </form>
 </div>
     

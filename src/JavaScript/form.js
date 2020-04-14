@@ -16,6 +16,6 @@ registerBtn.addEventListener("click", function() {
 loginBtn.addEventListener("click", function() {
   register.style.display = "none";
   login.style.display = "flex";
-  launcher.style.height = "30rem";
+  launcher.style.height = "31rem";
   btnSelected.style.transform = "translateX(0px)";
 });
