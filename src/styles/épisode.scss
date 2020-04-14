@@ -1,10 +1,13 @@
 .presentation {
   display: flex;
+  font-family:  Helvetica;
 
   &__img {
     flex-direction: column;
     align-content: flex-start;
-    height: 100vh;
+    height: 60vh;
+    margin-top: 20vh;
+    margin-right: 5vw;
   }
 
   &__ep {
@@ -22,11 +25,11 @@
   }
 }
 
-
 .presentation__desc {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 10px;
 
   &__title {
     font-weight: bold;
@@ -45,12 +48,12 @@
   &__txt {
     width: 600px;
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   
   &__type {
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom:20px;
     font-weight: bold;
   }
   
