@@ -39,6 +39,9 @@
       height: 30px;
     }
   }
+  a {
+    cursor: pointer;
+  }
 }
 
 .new {
@@ -46,6 +49,9 @@
   margin: auto;
   margin-bottom: 3vh;
 
+  a {
+    cursor: pointer;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
@@ -92,6 +98,9 @@
 .cat {
   margin-bottom: 3vh;
 
+  a {
+    cursor: pointer;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
