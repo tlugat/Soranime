@@ -42,6 +42,10 @@
       color: white;
       width: 140px;
       height: 30px;
+      a{
+        text-decoration: none;
+        color:white;
+      }
     }
   }
   a {
@@ -52,7 +56,9 @@
 .new {
   width: 90vw;
   margin: auto;
+  padding-bottom: 3rem;
   margin-bottom: 3vh;
+  border-bottom: solid 2px #dddddd;
 
   a {
     cursor: pointer;
@@ -77,6 +83,7 @@
     transition: transform 0.2s ease-out;
     &:hover {
       transform: scale(1.2);
+      opacity: 0.8;
     }
   }
   a {
@@ -102,6 +109,7 @@
 
 .cat {
   margin-bottom: 3vh;
+  margin-top: 2rem;
 
   a {
     cursor: pointer;
@@ -129,14 +137,15 @@
     overflow-x: auto;
 
     img {
-      width:270px;
-      border-radius:5px;
-      margin-right:10px;
+      width: 270px;
+      border-radius: 5px;
+      margin-right: 10px;
       cursor: pointer;
       transition: transform 0.2s ease-out;
       margin-right: 1rem;
       &:hover {
         transform: scale(1.2);
+        opacity: 0.8;
       }
     }
   }

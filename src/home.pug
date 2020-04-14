@@ -15,7 +15,7 @@
             img.firstSection__logo(src="assets/img/logo-naruto.png")
             p Toutes les saisons disponibles dès maintenant
             .firstSection__buttons
-                button Regarder
+                <button><a href="épisode.pug">Regarder</a></button>
                 button + Ma liste
 
     section.main__new.new
@@ -82,7 +82,7 @@
 
     section.main__cat.cat
         .cat__top.top
-            h2.cat__title Shojo
+            <h2 class="cat__title"><a class="cat__link" href="shonen.pug">Shojo</a></h2>
             div.cat__more
                 a.texte  Voir plus 
                 <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">

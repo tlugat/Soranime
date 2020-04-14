@@ -1,13 +1,11 @@
 .synopsis {
   display: none;
-  flex-direction: row;
   box-shadow: 10px 5px 27px -10px rgba(0, 0, 0, 0.75);
-  transition: height 0.5s, width 0.5s, left 0.5s, bottom 0.5s;
-  padding-bottom: 40px;
   margin: 1vw 0;
-
+  position: relative;
   &__img {
-    margin: 5px;
+    width: 40rem;
+    height: 20rem;
   }
   &__text {
     margin-left: 5vw;
@@ -28,6 +26,9 @@
   }
   &__cross {
     cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
   }
   &__buttons {
     display: flex;
@@ -37,13 +38,6 @@
     line-height: 1.4rem;
   }
 }
-.close {
-  transform: translate(calc(-50vh + 40px), calc(50vh - 40px)) scale(0);
-  transition: transform 2s, opacity 0.3s;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
 
 .more {
   padding: 5px;
@@ -51,7 +45,6 @@
   width: 130px;
   height: 30px;
   color: white;
-  border-radius: 4px;
   border: none;
   margin-right: 1rem;
 }
