@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/teolugat/Soranime#readme",
   "devDependencies": {
+    "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4",
     "sass": "^1.26.3"
