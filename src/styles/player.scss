@@ -31,6 +31,24 @@
   }
 }
 
+.return_btn {
+  position: absolute;
+  border: none;
+  color: white;
+  background: none;
+  margin-top: 4px;
+  z-index: 1;
+  cursor: pointer;
+  transform: translateY(-20px);
+  }
+
+  .allVid:hover .return_btn{
+    transform: translateY(0);
+    transition: all 0.2s;
+  }
+
+
+
 .allVid:hover .allVid__controls{
   transform: translateY(0);
   transition: all 0.2s;
