@@ -6,7 +6,7 @@
 }
 .films {
   display: grid;
-  grid-template-columns: 1300px;
+  grid-template-columns: 1180px;
   justify-content: center;
   margin-top: 100px;
 }
@@ -17,7 +17,7 @@
   cursor: pointer;
   transition: transform 0.2s ease-out;
   margin-bottom: 20px;
-  margin-right: 50px;
+  padding: 10px;
 
   &:hover {
     transform: scale(1.2);
