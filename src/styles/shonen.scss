@@ -7,10 +7,9 @@
 
 .shonen {
   display: grid;
-  grid-template-columns: 1180px; 
+  grid-template-columns: 1150px; 
   justify-content: center;
   &__img{
-    padding: 10px;
     padding: 10px;
     cursor: pointer;
     transition: transform 0.2s ease-out;
